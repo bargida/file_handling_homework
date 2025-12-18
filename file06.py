@@ -6,5 +6,12 @@ def main(data:str):
     Returns:
         list: return answer
     """
+    length = []
+
+    for i in data:
+        length+=[len(i)-1]
+    return [length]
     
 # Read data from file
+df = open('./data/data06.txt').readlines()
+print(main(df))
