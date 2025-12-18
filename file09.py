@@ -6,7 +6,7 @@ def main(data:str):
     Returns:
         int: return answer
     """
-    min_value=-1
+    min_value=10
     for i in data:
         if i.isdigit():
             if int(i)<min_value:
