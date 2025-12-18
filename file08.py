@@ -6,7 +6,7 @@ def main(data:str):
     Returns:
         int: return answer
     """
-    max_value=10
+    max_value=-1
     for i in data:
         if i.isdigit():
             if int(i)>max_value:
