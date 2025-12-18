@@ -6,5 +6,14 @@ def main(data:str):
     Returns:
         list: return answer
     """
+    non_digit =[]
+    for char in data:
+        if not char.isdigit():
+            non_digit+=[char]
+    return non_digit
+
     
 # Read data from file
+df = open('./data/data04.txt').read()
+
+print(main(df))
